@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.checklist-selector {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.checklist-selector select {
+    padding: 8px;
+    font-size: 14px;
+    min-width: 200px;
+}
+
+.checklist-selector input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-width: 200px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #34495e;
+}
+
+.checklist-container {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.checklist-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.checklist-item:hover {
+    background-color: #f8f9fa;
+}
+
+.checklist-item.checked {
+    background-color: #e8f5e9;
+    text-decoration: line-through;
+    color: #666;
+}
+
+.checklist-item input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.section-header {
+    font-weight: bold;
+    background-color: #eee;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.editor-container {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.editor-container h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#markdownEditor {
+    width: 100%;
+    min-height: 300px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    resize: vertical;
+}
+
+#updateFromEditor {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #27ae60;
+}
+
+#updateFromEditor:hover {
+    background-color: #219a52;
+}
+
+#saveAsNewBtn {
+    background-color: #2980b9;
+}
+
+#saveAsNewBtn:hover {
+    background-color: #2472a4;
+}
+
+#deleteCurrentBtn {
+    background-color: #c0392b;
+}
+
+#deleteCurrentBtn:hover {
+    background-color: #a93226;
+}
+
+.format-help {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.format-help p {
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.format-help p:last-child {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+.format-help pre {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.4;
+    color: #212529;
+}
+
+footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+
+#resetBtn {
+    background-color: #95a5a6;
+}
+
+#resetBtn:hover {
+    background-color: #7f8c8d;
+}
+
+.readme-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.readme-section h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.readme-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.readme-section li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #495057;
+}
+
+.readme-section strong {
+    color: #2c3e50;
+} 

@@ -1,0 +1,3 @@
+We work with HTML, CSS and JS only.
+Existing libraries may be used, but no JS frameworks
+Everything should run client side, and be loadable from simple http web servers

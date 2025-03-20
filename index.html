@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilot's Checklist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Aircraft Checklist</h1>
+            <div class="checklist-selector">
+                <select id="checklistSelect">
+                    <option value="default">Cessna 172 Pre-Start</option>
+                </select>
+                <input type="text" id="newChecklistName" placeholder="New checklist name">
+                <button id="saveAsNewBtn">Save As New</button>
+                <button id="deleteCurrentBtn">Delete Current</button>
+            </div>
+            <div class="controls">
+                <button id="saveBtn">Save Changes</button>
+                <button id="downloadBtn">Save to File</button>
+                <input type="file" id="uploadInput" accept=".md" style="display: none;">
+                <button id="uploadBtn">Load from File</button>
+                <button id="resetBtn">Reset Checks</button>
+            </div>
+        </header>
+        <main>
+            <div id="checklist" class="checklist-container">
+                <!-- Checklist items will be populated here -->
+            </div>
+            <div class="editor-container">
+                <h3>Markdown Editor</h3>
+                <textarea id="markdownEditor" spellcheck="false"></textarea>
+                <button id="updateFromEditor">Update Checklist</button>
+                <div class="format-help">
+                    <p>Markdown Format:</p>
+                    <pre>
+# Main Title
+
+## Section Name
+- Checklist Item 1
+- Checklist Item 2</pre>
+                    <p>Each line starting with "- " becomes a clickable checklist item</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Jurgens Krause. All rights reserved.</p>
+            <div class="readme-section">
+                <h4>About This Application</h4>
+                <ul>
+                    <li><strong>Privacy First:</strong> This application runs entirely in your browser. No data is sent to any server.</li>
+                    <li><strong>Local Storage:</strong> Your checklists are saved in browser cookies, which are stored only on your device.</li>
+                    <li><strong>File Management:</strong> You can save checklists to files on your computer and load them back later.</li>
+                    <li><strong>Cookie Usage:</strong> Cookies are used only to remember your checklists between visits. They expire after one year.</li>
+                    <li><strong>Offline Capable:</strong> Once loaded, this application works without an internet connection.</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
